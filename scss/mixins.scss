@@ -1,0 +1,32 @@
+@use 'variables';
+
+@mixin fivestars{
+    background-color: variables.$LightGrayishMagenta;
+    border: 4px;
+    margin: 8px 0;
+    width: 330px;
+    height: 80px;
+    padding: 18px;
+    font-weight: 700px;
+    color: variables.$VeryDarkMagenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+};
+
+@mixin cards{
+    background-color: variables.$VeryDarkMagenta;
+    border-radius: 10px;
+    max-width: 330px;
+    height: 250px;
+    padding: 37px;
+    margin: 16px 24px 0px 24px; 
+    color: variables.$LightGrayishMagenta;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+
+};
+
+

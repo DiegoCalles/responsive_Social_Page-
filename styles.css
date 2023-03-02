@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+  font-family: "Spartan", sans-serif;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.container {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------------------------------------------------header-------------------------------------------------------------*/
+header h1 {
+  color: hsl(300deg, 43%, 22%);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 64px 30px 64px;
+}
+
+header p {
+  color: hsl(303deg, 10%, 53%);
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 28px 0 28px;
+}
+
+/*----------------------------------------------------------------body-------------------------------------------------------*/
+.star-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.star-section__1 {
+  background-color: hsl(300deg, 24%, 96%);
+  border: 4px;
+  margin: 8px 0;
+  width: 330px;
+  height: 80px;
+  padding: 18px;
+  font-weight: 700px;
+  color: hsl(300deg, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.star-section__2 {
+  background-color: hsl(300deg, 24%, 96%);
+  border: 4px;
+  margin: 8px 0;
+  width: 330px;
+  height: 80px;
+  padding: 18px;
+  font-weight: 700px;
+  color: hsl(300deg, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.star-section__3 {
+  background-color: hsl(300deg, 24%, 96%);
+  border: 4px;
+  margin: 8px 0;
+  width: 330px;
+  height: 80px;
+  padding: 18px;
+  font-weight: 700px;
+  color: hsl(300deg, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star-section .fivestars {
+  min-width: 110px;
+}
+
+.star-section .text {
+  min-width: 240px;
+  text-align: center;
+}
+
+.buyers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.buyers__colton {
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  max-width: 330px;
+  height: 250px;
+  padding: 37px;
+  margin: 16px 24px 0px 24px;
+  color: hsl(300deg, 24%, 96%);
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+.buyers__colton__name {
+  font-weight: 700;
+  grid-column: 2/3;
+}
+.buyers__colton__status {
+  color: hsl(333deg, 80%, 67%);
+  grid-column: 2/3;
+}
+.buyers__irene {
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  max-width: 330px;
+  height: 250px;
+  padding: 37px;
+  margin: 16px 24px 0px 24px;
+  color: hsl(300deg, 24%, 96%);
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+.buyers__irene__name {
+  font-weight: 700;
+  grid-column: 2/3;
+}
+.buyers__irene__status {
+  color: hsl(333deg, 80%, 67%);
+  grid-column: 2/3;
+}
+.buyers__anne {
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 10px;
+  max-width: 330px;
+  height: 250px;
+  padding: 37px;
+  margin: 16px 24px 0px 24px;
+  color: hsl(300deg, 24%, 96%);
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+.buyers__anne__name {
+  font-weight: 700;
+  grid-column: 2/3;
+}
+.buyers__anne__status {
+  color: hsl(333deg, 80%, 67%);
+  grid-column: 2/3;
+}
+
+.buyers img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 20px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.buyers p {
+  font-weight: 500;
+  line-height: 20px;
+  grid-column: 1/3;
+  margin-top: 30px;
+}
+
+/*----------------------------------------------------------footer-------------------------------------------------------------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*---------------------------------------------------------->376-------------------------------------------------------------*/
+@media only screen and (min-width: 377px) {
+  .star-section {
+    padding: 0 25px;
+  }
+  .star-section__3 {
+    align-self: flex-end;
+  }
+  .star-section__1 {
+    align-self: flex-start;
+  }
+  .buyers {
+    padding: 0 14px;
+  }
+  .buyers__colton {
+    align-self: flex-start;
+  }
+  .buyers__anne {
+    align-self: flex-end;
+  }
+}
+/*---------------------------------------------------------->768-------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  body {
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 400px;
+  }
+  .star-section {
+    flex-direction: row;
+    width: 444px;
+    height: 50px;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
